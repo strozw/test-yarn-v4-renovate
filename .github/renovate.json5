@@ -1,0 +1,77 @@
+{
+  // エディタでの補完を有効化する
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  "extends": [
+    // Webアプリケーション用のデフォルト設定をする
+    // https://docs.renovatebot.com/presets-config/#configjs-app
+    "config:js-app",
+
+    // timezoneをAsia/Tokyoに設定する
+    ":timezone(Asia/Tokyo)",
+
+    // 一時間で作成されるPR数を無制限に設定する
+    // 同時にオープンできるPR数でコントロールするため
+    // ":prHourlyLimitNone",
+
+    // ブランチが作成されたら、すぐにPRを作成する
+    ":prImmediately",
+
+    // base branchの更新時、既存のRenovate PRをリベースする
+    ":rebaseStalePrs"
+  ],
+
+  "assignees": [
+    "strozw"
+  ],
+
+  // reviewer の指定
+  "reviewers": ["strozw"],
+
+  // PRにラベルを付ける
+  "labels": ["renovate"],
+
+  // automergeのscheduleを設定する
+  "automergeSchedule": [
+    "after 10am and before 5pm every weekday except on Friday"
+  ],
+
+  // 同時にオープンできるPR数
+  "prConcurrentLimit": 2,
+
+  // 条件を満たした場合、automergeが即時実行されるようにする
+  "platformAutomerge": true,
+
+  "ignoreDeps": [
+    "@fortawesome/fontawesome-svg-core",
+    "@fortawesome/free-regular-svg-icons",
+    "@fortawesome/free-solid-svg-icons",
+    "@fortawesome/react-fontawesome"
+  ],
+
+  // パッケージごとの設定
+  "packageRules": [
+    {
+      // 信頼度の高いパッケージのpatchバージョンのautomergeを有効にする
+      "prPriority": 30,
+      "extends": [":automergePatch"],
+      "matchPackageNames": [
+        // "react",
+        // "react-dom"
+      ]
+    },
+
+    {
+      // 信頼度の高いパッケージのminorバージョンのautomergeを有効にする
+      "prPriority": 20,
+      "extends": [":automergeMinor"],
+      "matchPackageNames": []
+    },
+
+    {
+      // 未指定のものよりもPRが作成される優先度を上げる
+      "prPriority": 1,
+      "matchDepTypes": []
+    }
+  ]
+}
