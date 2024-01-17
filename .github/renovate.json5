@@ -6,7 +6,6 @@
     "config:js-app",
     ":timezone(Asia/Tokyo)",
     ":prHourlyLimitNone",
-    ":prImmediately",
     ":rebaseStalePrs"
   ],
 
