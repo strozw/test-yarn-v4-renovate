@@ -37,7 +37,7 @@
   ],
 
   // 同時にオープンできるPR数
-  "prConcurrentLimit": 2,
+  "prConcurrentLimit": 10,
 
   // 条件を満たした場合、automergeが即時実行されるようにする
   "platformAutomerge": true,
