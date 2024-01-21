@@ -4997,7 +4997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"browserslist@npm:^4.21.5, browserslist@npm:^4.22.2":
+"browserslist@npm:^4.22.2":
   version: 4.22.2
   resolution: "browserslist@npm:4.22.2"
   dependencies:
@@ -5410,12 +5410,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js-compat@npm:3.31.0":
-  version: 3.31.0
-  resolution: "core-js-compat@npm:3.31.0"
+"core-js-compat@npm:3.35.1":
+  version: 3.35.1
+  resolution: "core-js-compat@npm:3.35.1"
   dependencies:
-    browserslist: "npm:^4.21.5"
-  checksum: 1a506e163ed3a99834f8705eca4be93ca35ee1091872b669c82b9c81af2f25a1bc0acc9c80960bd9c373f5df7e0b7448f11996f23a6935cef41e9fd4c1089e83
+    browserslist: "npm:^4.22.2"
+  checksum: 9a153c66591e23703e182b258ec6bdaff0a7c578dc5f9ac152fdfef2d09e8ec277f192e28d4634a8b576c8e1a6d3b1ac76ff6b8776e72b71b334e609e177a05e
   languageName: node
   linkType: hard
 
@@ -10231,7 +10231,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:6.19.0"
     "@typescript-eslint/parser": "npm:6.19.0"
     "@vitejs/plugin-react-swc": "npm:3.5.0"
-    core-js-compat: "npm:3.31.0"
+    core-js-compat: "npm:3.35.1"
     eslint: "npm:8.56.0"
     eslint-plugin-react-hooks: "npm:4.6.0"
     eslint-plugin-react-refresh: "npm:0.4.5"
