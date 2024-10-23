@@ -17,8 +17,8 @@
     "vite/esbuild": "0.19.3"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.6.8",
@@ -29,14 +29,14 @@
     "@storybook/react": "7.6.8",
     "@storybook/react-vite": "7.6.8",
     "@storybook/test": "7.6.8",
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
     "@typescript-eslint/eslint-plugin": "6.19.0",
     "@typescript-eslint/parser": "6.19.0",
     "@vitejs/plugin-react-swc": "3.5.0",
     "core-js-compat": "3.31.0",
     "eslint": "8.56.0",
-    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-react-refresh": "0.4.5",
     "eslint-plugin-storybook": "0.6.15",
     "prettier": "2.7.1",
